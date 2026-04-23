@@ -5,6 +5,8 @@ export default function SuccessPage({ordersDetail}){
     const secimler = ordersDetail.malzemeler.length *secimUcreti;
     const toplam = (baslangicUcreti + secimler) * ordersDetail.quantity;
 
+    console.log(ordersDetail.hamur);
+
     if(!ordersDetail || !ordersDetail.isim){
         return (
       <section className="success-page-container">
@@ -36,8 +38,8 @@ export default function SuccessPage({ordersDetail}){
                           ordersDetail.boyut === "orta" ? "M":
                           ordersDetail.boyut === "büyük" ? "L" :
                           "-"}</p>
-              <p>Hamur: {ordersDetail.hamur === "kalın-hamur" ? "Kalın" :
-                          ordersDetail.hamur === "ince-hamur" ? "İnce":
+              <p>Hamur: {ordersDetail.hamur === "kalin" ? "Kalın" :
+                          ordersDetail.hamur === "ince" ? "İnce":
                           "-"}</p>
 
               <div className="icerik2">

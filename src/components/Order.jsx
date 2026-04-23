@@ -59,8 +59,8 @@ export default function Order({ordersDetail,setOrdersDetail}){
         ///Hamur kalınlıklarını bir array içine alalım
         
         const hamurSecenekleri = [
-            "İnce Hamur",
-            "Kalın Hamur",
+            { label: "İnce Hamur", value: "ince" },
+            { label: "Kalın Hamur", value: "kalin" },
             ];
 
 
@@ -238,17 +238,11 @@ export default function Order({ordersDetail,setOrdersDetail}){
                     >
                         <option value="">Hamur Kalınlığı</option>
 
-                        {hamurSecenekleri.map((option, index) => {
-                        const value = option
-                            .toLowerCase()
-                            .replace(/\s+/g, "-");
-
-                        return (
-                            <option value={value} key={index}>
-                            {option}
-                            </option>
-                        );
-                        })}
+                            {hamurSecenekleri.map((option, index) => (
+                                <option value={option.value} key={index}>
+                                {option.label}
+                                </option>
+                            ))}
                     </select>
                 </div>
     
