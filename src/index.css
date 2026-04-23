@@ -126,7 +126,7 @@ main{
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 55rem;
+  width: 53rem;
   z-index: 1;
 }
 
