@@ -4,7 +4,7 @@ import QuantitySelector from "./QuantitySelector";
 import { useState,useEffect } from "react";
 import axios from "axios";
 
-export default function FormPage(){
+export default function FormPage({ordersDetail,setOrdersDetail}){
    
 
 
@@ -20,7 +20,7 @@ export default function FormPage(){
     </section>
 
     <section className="form-main">
-        <Order />
+        <Order ordersDetail={ordersDetail} setOrdersDetail={setOrdersDetail} />
     </section>
 
     </>

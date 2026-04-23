@@ -5,18 +5,10 @@ import QuantitySelector from "./QuantitySelector";
 import axios from "axios";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function Order(){
+export default function Order({ordersDetail,setOrdersDetail}){
+    
     const history=useHistory();
-    ////////sipariş detayı için boş bir state tanımlıyoruz
-    const [ordersDetail,setOrdersDetail]=useState({
-        isim:"",
-        boyut:"",
-        malzemeler:[],
-        note:"",
-        hamur:"",
-        quantity:1,
-        
-     })
+   
 
      //////Adet azaltma ve çoğaltma fonkisyonları
 
@@ -167,16 +159,23 @@ export default function Order(){
                 "https://reqres.in/api/pizza",
                 payload,
                 {
-                    headers: {
-                    "x-api-key": "reqres-free-v1",
-                    "Content-Type": "application/json",
-                    },
+                   headers: {
+                    'x-api-key': 'pro_cd00c4c782c5dc714ce8d650d728f9c46ad30656234dcf61d8d5b9fac5a9f0fa',
+                    'X-Reqres-Env': 'prod',
+                    'Content-Type': 'application/json'
+                },
                 }
                 );
 
                 //  API'den dönen cevap
                 console.log("SİPARİŞ ÖZETİ (API RESPONSE):", response.data);
+                console.log("yönlendirme sonrasi");
+
                 history.push("/successPage");
+
+                console.log("submit çalıştı");
+                console.log("response:", response.data);
+                console.log("yönlendirme sonrasi");
 
             } catch (error) {
                 console.error("Sipariş gönderilirken hata oluştu:", error);

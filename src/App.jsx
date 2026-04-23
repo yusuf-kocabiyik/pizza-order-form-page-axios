@@ -7,6 +7,16 @@ import FormPage from './components/FormPage'
 import SuccessPage from './components/SuccessPage'
 
 function App() {
+   ////////sipariş detayı için boş bir state tanımlıyoruz
+    const [ordersDetail,setOrdersDetail]=useState({
+        isim:"",
+        boyut:"",
+        malzemeler:[],
+        note:"",
+        hamur:"",
+        quantity:1,
+        
+     })
   
 
   return (
@@ -18,11 +28,11 @@ function App() {
      </Route>
 
       <Route path="/formPage">
-        <FormPage/>
+        <FormPage ordersDetail={ordersDetail} setOrdersDetail={setOrdersDetail} />
       </Route>
 
       <Route path="/successPage">
-        <SuccessPage/>
+        <SuccessPage ordersDetail={ordersDetail}  />
       </Route>
 
     </Switch>

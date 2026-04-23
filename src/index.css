@@ -67,7 +67,7 @@ main{
 .banner{
   background-color: #CE2829;
   position: relative;
-  height: 45rem;
+  height: 100vh;
   text-align: center;
   width: 100vw;
 
@@ -75,16 +75,17 @@ main{
 .logo{
   font-family: 'Londrina Solid', cursive;
   color:white;
+  padding-top: 1rem;
   font-size: 2rem;
-  padding: 2rem;
   font-weight: 400;
   text-align: center;
+  margin: auto;
   }
   .banner-text{
     display: flex;
     flex-direction: column;
     align-items:center ;
-    gap: 0.5rem;
+    gap: 2rem;
 
 
   }
@@ -125,7 +126,7 @@ main{
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 50rem;
+  width: 55rem;
   z-index: 1;
 }
 
@@ -531,7 +532,7 @@ footer ul li{
   
 }
 .footer-right img{
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   
 }
 .footer-bottom{
@@ -747,12 +748,64 @@ background-color: #CE2829;
 .success-banner-text{
   display: flex;
   flex-direction: column;
-  width: 50rem;
-  height: 35rem;
-  padding-top: 1rem;
+  height: auto;
+  padding: 0rem;
+  gap: 0rem;
+  margin: 0 auto;
+}
+.lezzetinYolda{
+  color: #FDC913;
+  font-weight: 300;
+  font-family:'Satisfy', sans-serif;
+  font-size:1.5rem;
+}
+.siparisAlindi{
+  font-weight: 300;
+  border-bottom: #FFFFFF 1px solid;
+  width: 20rem;
+  padding-bottom: 1rem;
+  margin: auto;
   
-  gap: 5rem;
-  margin:0 auto;
+}
+.success-order-summary{
+  display: flex;
+  flex-direction: column;
+  padding-top:2rem ;
+  gap: 1.8rem;
+  color:white;
+  
+  
+}
+.icerik{
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.icerik-malzemeler{
+  text-align: start;
+}
+.siparisToplami{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 18rem;
+  height: 10rem;
+  gap: 0.5rem;
+  border: white 1px solid;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.malzemeTutari{
+  display: inline-block;
+  width: 8rem;
+  text-align: start;
+}
+.toplam{
+  display: inline-block;
+  width: 8rem;
+  text-align: start;
 }
 .success-text{
   font-family:'Roboto Condensed', sans-serif;
@@ -760,9 +813,17 @@ background-color: #CE2829;
   font-size:3rem;
   font-weight: 300;
   width: 30rem;
-  
   margin:0 auto;
 }
+.success-order-summary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .error-text{
   color: red;
   font-size: 0.95rem;
@@ -800,6 +861,7 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   gap:3rem;
+  
 }
 .pizza{
   
