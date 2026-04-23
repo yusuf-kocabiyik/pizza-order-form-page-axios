@@ -17,10 +17,19 @@
   }
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  /* 4. Add accessible line-height */
+  
   line-height: 1.5;
-  /* 5. Improve text rendering */
+ 
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -58,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .largest-container{
   
-  width: 100%;
+  
   margin:0 auto;
 }
 main{
@@ -67,9 +76,9 @@ main{
 .banner{
   background-color: #CE2829;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 
 }
 .logo{
@@ -739,10 +748,10 @@ color: #292929;
 .success-page-container{
 background-color: #CE2829;
   position: relative;
-  height: 100vh;
-  max-height: 160rem;
+  min-height: 100vh;
+  
   text-align: center;
-  width: 100vw;
+  width: 100%;
 
 }
 .success-banner-text{
