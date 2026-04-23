@@ -12,10 +12,10 @@ export default function Banner(){
                 
                 <Link to="/formPage" className="cta" data-testid="order-button">ACIKTIM!</Link> 
               </div>
-              <img className="pizza" src="/public/banner/banner.png" alt="pizza"/>
-              <img className="malzemeler" src="/public/banner/div.png" alt="malzemeler"/>
-              <img className="sag-ust" src="/public/banner/upRight.png" alt="sag-ust"/>
-              <img className="sol-alt" src="/public/banner/downLeft.png" alt="sol-alt"/>
+              <img className="pizza" src="images/banner/banner.png" alt="pizza"/>
+              <img className="malzemeler" src="images/banner/div.png" alt="malzemeler"/>
+              <img className="sag-ust" src="images/banner/upRight.png" alt="sag-ust"/>
+              <img className="sol-alt" src="images/banner/downLeft.png" alt="sol-alt"/>
               
         </section>
         
